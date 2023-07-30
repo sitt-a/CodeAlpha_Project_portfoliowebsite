@@ -1,0 +1,140 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+   
+   
+}
+main{background-color: #292828;}
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.container {
+	max-width: 1800px;
+	margin: 0 auto;
+	padding: 0 10px;
+  display: block;
+}
+
+
+a {
+	color: goldenrod;
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+header {
+	background-color:black;
+	padding: 20px 0;
+	display: flex;
+	font-size:larger ;
+	justify-content: space-between;
+	position: relative;
+  align-content: end;
+  margin: 0;
+  color: #fcfcfc;
+}
+
+
+span{
+  margin:0;
+}
+
+nav ul  {
+	display: inline-flex;
+	flex-direction: column;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	background-color: #000000;
+	width: 100%;
+	padding: 10px;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s ease;
+  text-align: left;
+  margin-left: 620px;
+  
+}
+
+nav a:hover {
+	color: #ffffff;
+	transition: visibility 0s, opacity 0.5s ease;
+}
+
+.menu-toggle {
+	background-color: transparent;
+	border: none;
+	color: #fcfbfb;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.menu-toggle:focus {
+	outline: none;
+}
+
+.menu-toggle:hover {
+	color: #020202;
+}
+
+nav.visible {
+	visibility: visible;
+	opacity: 1;
+}
+header{
+  margin:0;
+}
+@media only screen and (min-width: 768px) {
+	nav ul {
+		flex-direction: row;
+		position: static;
+		background-color: transparent;
+		width: auto;
+		padding: 0;
+		visibility: visible;
+		opacity: 1;
+    
+	}
+	
+	nav li {
+		margin: 0 20px;
+	}
+	
+	.menu-toggle {
+		display: none;
+	}
+}
+
+.about {
+	background-color: #111010;
+	color: #fff;
+	padding: 35px 0;
+	
+}
+
+.about h2 {
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 40px;
+	color:goldenrod;
+}
+
+.about p {
+	font-size: 16px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+footer {
+	background-color:black;
+	padding: 20px 0;
+	text-align: center;
+	color: goldenrod;
+}  

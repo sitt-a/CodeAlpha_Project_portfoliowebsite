@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>John Doe - Graphic Designer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="cstyle.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			
+			<button class="menu-toggle">&#9776;</button>
+			
+			<nav>
+				<ul>
+					<li><a href="phome.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+	</header>
+	<div class="cr">
+	<form onsubmit="sendEmail();reset();return false">
+		<h3>contact me</h3>
+		<input type="text" id="name" name="name" placeholder="name" required>
+		
+		
+		<input type="email" id="email" name="email" placeholder="email" required>
+		
+		
+		<input type="tel" id="phone" name="phone" placeholder="phone"required>
+		
+		
+		<textarea id="message" rows="4" placeholder="message"required></textarea>
+		
+		<button type="submit" value="Submit">send</button> 
+	  </form>
+	</div>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2023 John Doe - All Rights Reserved</p>
+		</div>
+	</footer>
+
+	<script src="https://smtpjs.com/v3/smtp.js">
+	</script>
+	<script>function sendEmail(){Email.send({
+		Host : "smtp.gmial.com",
+		Username : "username",
+		Password : "password",
+		To : 'them@website.com',
+		From : "you@isp.com",
+		Subject : "This is the subject",
+		Body : "And this is the body"
+	}).then(
+	  message => alert(message)
+	);}</script>
+</body>
+</html>
